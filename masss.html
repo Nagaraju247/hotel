@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="mass.css">
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center vh-100">
+
+<div class="booking-card container">
+  <div class="row g-0 align-items-center">
+
+    <!-- Left Image -->
+    <div class="col-lg-5 image-section">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.38CMrDRJbz2F75YooeAWvwHaEK?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+           class="img-fluid hotel-img" alt="Hotel Room">
+    </div>
+
+    <!-- Right Form -->
+    <div class="col-lg-7 p-4 p-lg-5">
+
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="booking-title">Booking Form</h1>
+        <i class="fa-solid fa-xmark close-icon"></i>
+      </div>
+
+      <form>
+
+        <input type="text" class="form-control custom-input mb-3" placeholder="Full Name">
+        <input type="email" class="form-control custom-input mb-3" placeholder="Email Address">
+        <input type="tel" class="form-control custom-input mb-3" placeholder="Phone Number">
+
+        <div class="row g-3 mb-4">
+          <div class="col-md-4">
+            <input type="date" class="form-control custom-input" placeholder="Check-in Date">
+          </div>
+          <div class="col-md-4">
+            <input type="date" class="form-control custom-input" placeholder="Check-out Date">
+          </div>
+
+          <!-- Guests -->
+          <div class="col-md-4">
+            <div class="guest-box d-flex align-items-center justify-content-between">
+              <button type="button" class="guest-btn">−</button>
+              <span class="guest-text">Guests</span>
+              <button type="button" class="guest-btn">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="reserve-btn">Reserve Your Stay</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

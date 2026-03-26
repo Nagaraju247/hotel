@@ -1,0 +1,711 @@
+/* nav bar */
+.navbar-collapse {
+     flex-grow: 0;
+}
+.nav{
+    padding:10px;
+}
+.but{
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(233, 205, 48);
+    padding:7px 15px 0px 15px;
+    margin-left: 40px;
+    color:white;
+    font-weight: 600;
+    text-decoration: none;
+}
+ul li{
+    margin:0px 20px 0px 20px;
+    font-weight: 600;
+}
+.container-fluid{
+    padding-right: var(--bs-gutter-x, .0rem);
+    padding-left: var(--bs-gutter-x, .0rem);
+}
+
+/*  room section */
+.rooms{
+    min-height:500px;
+    background-color: aquamarine;
+    margin-top:20px;
+    background-image: url("https://wallpaperbat.com/img/460828-luxury-hotel-ultra-hd-desktop-background-wallpaper-for-4k-uhd-tv-tablet-smartphone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.but1{
+    border:none;
+    border-radius: 20px;
+    color:rgb(233, 205, 48);
+    padding:5px 15px;
+    font-weight: 600;
+}
+        .find-rooms{
+            margin-top:70px;
+            width:70%;
+        }
+
+        .booking-wrapper {
+            background: #fff;
+            border-radius: 60px;
+            padding: 25px 35px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .form-label {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .custom-input {
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 30px !important;
+            padding: 10px 15px;
+        }
+
+        .guest-box {
+            background: #f1f1f1;
+            border-radius: 30px;
+            padding: 6px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .guest-btn {
+            border: none;
+            background: none;
+            font-size: 18px;
+            width: 30px;
+        }
+
+        .search-btn {
+            background-color: #d4a017;
+            color: white;
+            border-radius: 40px;
+            padding: 12px 35px;
+            font-weight: 600;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .search-btn:hover {
+            background-color: #b8860b;
+            transform: scale(1.05);
+        }
+        .row {
+          margin-top: calc(var(--bs-gutter-y) * -1.9);
+        }
+        
+        @media (max-width: 992px) {
+            .nav{
+                padding:20px !important;
+            }
+            .booking-wrapper {
+                border-radius: 30px;
+                font-size: 0.5rem;
+            }
+            
+        }
+
+
+.Rooms{
+    padding-top:50px;
+    min-height:585px;
+    width:100%;
+    background-image: linear-gradient(117deg ,white 35%,rgb(164, 143, 8) 35%);
+    position: relative;
+    overflow: hidden;
+    contain: paint;
+}
+.text{
+    position: relative;
+    left:55%;
+    color:white;
+    
+}
+.text1{
+    margin-top:10%;
+    display: flex;
+    flex-direction: row;
+}
+.text button{
+     height:20%;
+     border-radius: 20px;
+     border:none;
+     color:rgb(179, 161, 43) ;
+     padding:5px 10px;
+     margin-left:2%;
+}
+.text1 a{
+   color:white;
+   height:20%;
+   text-decoration: none;
+   border-radius: 20px;
+   background-color: rgb(251, 228, 78) ;
+   padding:5px 10px;
+   margin-left:2%;
+
+}
+.slide{
+    height:100%;
+    width:32%;
+    /* background-color: aquamarine; */
+    position: absolute;
+    left:90px;
+    top:0;
+    transform: skewX(-27deg);
+    z-index: 1;
+    
+}
+.box111{
+  animation-name:a111;
+  animation-timeline:view();
+    animation-range: entry 0% cover 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes a111{
+From {
+Transform: translateX(-900px)
+} 
+To{
+Transform: translateX(0px)
+}
+}
+.box112{
+  animation-name:a112;
+  animation-timeline:view();
+    animation-range: entry 0% cover 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes a112{
+From {
+Transform: translateX(900px)
+} 
+To{
+Transform: translateX(0px)
+}
+}
+
+
+.slide div{
+    height:30%;
+    width:100%;
+    border-radius: 20px;
+    margin:30px 0px 30px 0px;
+    overflow: hidden;
+}
+.slide div img{
+    height:130%;
+    width:150%;
+    transform: skewX(27deg);
+    position: relative;
+    left:-60px;
+}
+.scroll{
+    /* height:100px; */
+    width:80%;
+    position: absolute;
+    right:0;
+    bottom:20px;
+    background-color: #ffffff;
+    font-size: 250%;
+    font-weight: 600;
+    padding-top:10px; 
+}
+
+@media (max-width: 768px) {
+
+    .Rooms {
+        background-image: linear-gradient(180deg, white 50%, rgb(164, 143, 8) 50%);
+        min-height: auto;
+        padding: 30px 15px;
+    }
+
+    .text {
+        position: static;
+        left: 0;
+        text-align: center;
+        color: black;
+        margin-top: 20px;
+    }
+
+    .text1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide {
+        position: relative;
+        width: 90%;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 20px auto;
+    }
+
+    .slide div img {
+        transform: none;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+
+    .scroll {
+        position: relative;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        font-size: 20px;
+    }
+}
+/* spa section */
+
+.avail{
+    width:100%;
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-wrap: wrap;
+    gap:12px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    contain:paint;
+}
+.avail div img{
+    height:200px;
+    width:280px;
+    border-radius: 20px;
+}
+.avail-but{
+    height:20%;
+     border-radius: 20px;
+     border:none;
+     background-color:rgb(179, 161, 43) ;
+     color: white;
+     padding:5px 15px;
+     margin-top:70px;
+}
+.avail div img:hover{
+    box-shadow: 0px 0px 10px rgb(179, 161, 43)
+}
+
+
+/* gallery section */
+.section-title{
+      text-align:center;
+      font-weight:600;
+      margin:40px 0;
+    }
+
+    .image-large{
+      border-radius:20px;
+      overflow:hidden;
+    }
+
+    .image-large img{
+      width:100%;
+      height:350px;
+      object-fit:cover;
+    }
+
+    .circle-badge{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      width:220px;
+      height:220px;
+      background:#c89c1d;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      font-size:22px;
+      font-weight:600;
+      border:10px solid white;
+      box-shadow:0 5px 20px rgba(0,0,0,0.2);
+      z-index:2;
+    }
+
+    .small-gallery img{
+      width:100%;
+      height:140px;
+      object-fit:cover;
+      border-radius:15px;
+      transition:0.3s;
+    }
+
+    .small-gallery img:hover{
+      transform:scale(1.05);
+    }
+     @media(max-width:768px){
+      .circle-badge{
+        width:150px;
+        height:150px;
+        font-size:16px;
+      }
+
+      .image-large img{
+        height:220px;
+      }
+    }
+/* Section Title */
+.section-title{
+    text-align:center;
+    font-weight:600;
+    margin:0px 0px 100px 0px;
+}
+
+/* Review Card */
+.review-card{
+    background:#c89c1d;
+    color:white;
+    padding:30px;
+    border-radius:40px;
+    position:relative;
+    min-height:230px;
+}
+
+.review-card h5{
+    font-weight:600;
+}
+
+.stars{
+    color:#fff;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+/* Quote Circle */
+.quote-icon{
+    position:absolute;
+    top:1px;
+    left:-20px;
+    background:black;
+    color:white;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 44px;
+    padding-top: 10px;
+}
+
+/* under Section */
+.under-section{
+    background:#c89c1d;
+    color:white;
+    border-radius:20px;
+    padding:40px;
+    margin-top:60px;
+}
+
+.under-btn{
+    background:white;
+    color:#c89c1d;
+    border-radius:30px;
+    padding:10px 25px;
+    font-weight:600;
+    border:none;
+    transition:0.3s;
+}
+
+.cta-under:hover{
+    background:black;
+    color:white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .review-card{
+        transform:none;
+        margin-bottom:30px;
+    }
+}
+
+.footer-section {
+  background: linear-gradient(to right, #111, #1a1a1a);
+}
+
+.footer-section h3,
+.footer-section h5 {
+  color: #ffffff;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.footer-section p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  color: #bbb;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.footer-section {
+  background: linear-gradient(to right, #111, #1a1a1a);
+}
+
+.footer-section h3,
+.footer-section h5 {
+  color: #ffffff;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.footer-section p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  color: #bbb;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+
+
+
+ @media (max-width: 992px) {
+            .nav{
+                padding:20px !important;
+            }
+            .booking-wrapper {
+                border-radius: 30px;
+                font-size: 0.5rem;
+            }
+            .avail{
+                gap:40px;
+            }
+        }
+        
+        
+
+
+/* Mobile menu style */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: rgba(0,0,0,0.95);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    animation: navSlide 0.4s ease;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav li {
+    margin: 12px 0;
+  }
+
+  .but {
+    margin: 15px auto 0;
+    display: block;
+  }
+}
+
+@keyframes navSlide {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.but, .but1, .search-btn, .avail-but, .under-btn {
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.but:hover, .but1:hover, .search-btn:hover, .avail-but:hover, .under-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 25px rgba(233,205,48,0.8);
+}
+
+.but::before, .but1::before, .search-btn::before, .avail-but::before, .under-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: 0.6s;
+}
+
+.but:hover::before,
+.but1:hover::before,
+.search-btn:hover::before,
+.avail-but:hover::before,
+.under-btn:hover::before {
+  left: 100%;
+}
+
+
+.slide div img,
+.avail div img,
+.small-gallery img {
+  transition: 0.6s ease;
+}
+
+.slide div:hover img {
+  transform: scale(1.15) skewX(27deg);
+}
+
+.small-gallery img:hover {
+  transform: scale(1.2) rotate(2deg);
+  box-shadow: 0 0 20px rgba(200,156,29,0.8);
+}
+
+
+
+.rooms,
+.Rooms,
+.review-card,
+.image-large,
+.footer-section {
+  animation: fadeUp 0.9s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.review-card {
+  transition: 0.4s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .rooms h1 {
+    font-size: 1.8rem;
+  }
+
+  .rooms p {
+    font-size: 0.9rem;
+  }
+
+  .find-rooms {
+    width: 95%;
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 1.5rem;
+  }
+
+  .circle-badge {
+    width: 140px;
+    height: 140px;
+    font-size: 15px;
+  }
+
+  .review-card {
+    border-radius: 25px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .rooms h1 {
+    font-size: 1.4rem;
+  }
+
+  .but1 {
+    font-size: 14px;
+  }
+
+  .search-btn {
+    font-size: 14px;
+  }
+
+  .avail div img {
+    width: 100%;
+  }
+}
